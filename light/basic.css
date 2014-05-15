@@ -1,0 +1,222 @@
+/*
+ * Filename:    basic.css
+ * Description: Markdown CSS
+ * Author:      Jonas Devlieghere
+ *              <info@jonasdevlieghere.com>
+ * Website:     http://jonasdevlieghere.com
+ */
+@import url(http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    overflow-x:hidden;
+    font-size:11pt;
+    line-height:1.7;
+    font-family: Helvetica, arial, sans-serif;
+    max-width:42em;
+    margin: auto;
+}
+
+body>:first-child
+{
+    margin-top:0!important;
+}
+
+body>:last-child
+{
+    margin-bottom:0!important;
+}
+
+blockquote,dl,ol,p,pre,table,ul {
+    border: 0;
+    margin: 15px 0;
+    padding: 0;
+}
+
+body a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+body h1,body h2,body h3,body h4,body h5,body h6{
+    margin:1em 0 15px;
+    padding:0;
+    font-weight:bold;
+    line-height:1.7;
+    cursor:text;
+    position:relative
+}
+
+body h1 tt,body h1 code,body h2 tt,body h2 code,body h3 tt,body h3 code,body h4 tt,body h4 code,body h5 tt,body h5 code,body h6 tt,body h6 code{
+    font-size:inherit
+}
+
+body h1{
+    font-size:2.5em;
+     border-bottom:1px solid #ddd
+}
+
+body h2{
+    font-size:2em;
+    border-bottom:1px solid #eee
+}
+
+body h3{
+    font-size:1.5em
+}
+
+body h4{
+    font-size:1.2em
+}
+
+body h5, body h6{
+    font-size:1em
+}
+
+
+body p,body blockquote,body ul,body ol,body dl,body table,body pre{
+    margin:15px 0
+}
+
+body h1 tt,body h1 code,body h2 tt,body h2 code,body h3 tt,body h3 code,body h4 tt,body h4 code,body h5 tt,body h5 code,body h6 tt,body h6 code
+{
+    font-size:inherit;
+}
+
+
+body li p.first
+{
+    display:inline-block;
+}
+
+body ul,body ol
+{
+    padding-left:30px;
+    list-style: disc;
+}
+
+body ul ul,body ul ol,body ol ol,body ol ul
+{
+    margin-bottom:0;
+    margin-top:0;
+}
+
+
+
+body blockquote
+{
+    border-left:4px solid #DDD;
+    color:#777;
+    padding:0 15px;
+}
+
+body blockquote>:first-child
+{
+    margin-top:0;
+}
+
+body blockquote>:last-child
+{
+    margin-bottom:0;
+}
+
+body table
+{
+    display:block;
+    overflow:auto;
+    width:100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+}
+
+body table th
+{
+    font-weight:700;
+}
+
+body table th,body table td
+{
+    border:1px solid #ddd;
+    padding:6px 13px;
+}
+
+body table tr
+{
+    background-color:#fff;
+    border-top:1px solid #ccc;
+}
+
+body table tr:nth-child(2n)
+{
+    background-color:#f8f8f8;
+}
+
+body img
+{
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    max-width:100%;
+}
+
+body code,body tt
+{
+    background-color:#f8f8f8;
+    border:1px solid #ddd;
+    border-radius:3px;
+    margin:0 2px;
+    padding:0 5px;
+}
+
+body code
+{
+    white-space:nowrap;
+}
+
+
+code,pre{
+    font-family:Consolas, "Liberation Mono", Courier, monospace;
+    font-size:12px
+}
+
+body pre>code
+{
+    background:transparent;
+    border:none;
+    margin:0;
+    padding:0;
+    white-space:pre;
+    }
+
+body pre,body pre
+{
+    background-color:#f8f8f8;
+    border:1px solid #ddd;
+    font-size:13px;
+    line-height:19px;
+    overflow:auto;
+    padding:6px 10px;
+    border-radius:3px
+}
+
+body pre code,body pre tt
+{
+    background-color:transparent;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+@media print {
+    body{font-size:8pt; max-width:80%;}
+    @page :left { margin: 15mm 21mm 15mm 10mm; }
+    @page :right { margin: 15mm 10mm 15mm 10mm; }
+    a { text-decoration: none; }
+    h1, h2, h3, h4, h5, h6 { page-break-after: avoid; }
+}
