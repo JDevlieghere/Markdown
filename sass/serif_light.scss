@@ -1,24 +1,43 @@
 /*
- * Filename: 		serif.css
+ * Filename: 		serif_light.css
  * Description:		Markdown CSS
- * Author:		Jonas Devlieghere
- * 				<info@jonasdevlieghere.com>
- * Website:		http://jonasdevlieghere.com
+ * Author:			Jonas Devlieghere
+ * 					<info@jonasdevlieghere.com>
+
+ * Website:			http://jonasdevlieghere.com
  */
+
 @import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700);
-@import url(//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css)
+
+@import 'reset';
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin text-size-adjust($size) {
+	-webkit-text-size-adjust: $size;
+		-ms-text-size-adjust: $size;
+}
+
+$font-stack:'Droid Serif', Georgia, serif;
+$primary-color: #444;
+$background-color: #fefefe;
+$secondary-color: #0645ad;
 
 html {
 	font-size: 100%;
 	overflow-y: scroll;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+	@include text-size-adjust(100%);
 }
 
 body {
-	color:#444444;
-	background-color:#fefefe;
-	font-family: 'Droid Serif', Georgia, serif;
+	font: 100% $font-stack;
+	color: $primary-color;
+	background-color: $background-color;
 	font-size:12pt;
 	line-height:1.5em;
 	padding:1em;
