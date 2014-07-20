@@ -9,14 +9,8 @@
 
 @import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700);
 
-@import 'reset';
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
+@import "compass/reset";
+@import "compass/css3/border-radius";
 
 @mixin text-size-adjust($size) {
 	-webkit-text-size-adjust: $size;
@@ -202,7 +196,7 @@ code, tt {
 	white-space: nowrap;
 	border: 1px solid #eaeaea;
 	background-color: #f8f8f8;
-	border-radius: 3px;
+	@include border-radius(3px, 3px);
 }
 
 pre {
@@ -210,7 +204,7 @@ pre {
 	border: 1px solid #ccc;
 	overflow: auto;
 	padding: 6px 10px;
-	border-radius: 3px;
+	@include border-radius(3px, 3px);
 }
 
 pre code, pre tt {
