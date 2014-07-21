@@ -1,0 +1,28 @@
+/*
+ * Filename:    basic_dark.css
+ * Description: Markdown CSS
+ * Author:      Jonas Devlieghere
+ *              <info@jonasdevlieghere.com>
+ * Website:     http://jonasdevlieghere.com
+ */
+
+/* Imports */
+@import "compass/reset";
+@import "compass/css3/border-radius";
+
+/* Colors */
+$primary-color: #FF3D73;
+$secondary-color: #00b9d7;
+$tertiary-color: #cccccc;
+
+$background-color: #1d1d19;
+$text-color: #f1f1f1;
+$text-shaded-color: #CCCCCC;
+$border-color: #000000;
+$shade-color: #000000;
+
+/* Fonts */
+$main-font: Helvetica, arial, sans-serif;
+$monospace-font: Consolas, "Liberation Mono", Courier, monospace;
+
+@import "basic"
