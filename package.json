@@ -1,0 +1,9 @@
+{
+  "name": "Markdown",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.9.0",
+    "grunt-contrib-watch": "~0.4.4"
+  }
+}
